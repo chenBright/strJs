@@ -1,0 +1,43 @@
+{
+  "name": "strJS",
+  "version": "1.0.0",
+  "description": "String manipulation functions for javascript",
+  "main": "str.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=pro webpack",
+    "dev": "cross-env NODE_ENV=dev webpack --progress --color --watch",
+    "test": "mocha --compilers js:babel-core/register --colors -w -R nyan ./test/*.js",
+    "push": "git push -u origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/chenBright/strJS.git"
+  },
+  "keywords": [
+    "string",
+    "manipulation"
+  ],
+  "author": "chenBright",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenBright/strJS/issues"
+  },
+  "homepage": "https://github.com/chenBright/strJS#readme",
+  "devDependencies": {
+    "babel": "6.3.13",
+    "babel-core": "6.1.18",
+    "babel-eslint": "5.0.0",
+    "babel-loader": "6.1.0",
+    "babel-plugin-add-module-exports": "0.1.2",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-preset-es2015": "6.3.13",
+    "chai": "3.4.1",
+    "cross-env": "^3.1.1",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint-loader": "1.1.0",
+    "mocha": "2.3.4",
+    "webpack": "1.12.9"
+  },
+  "dependencies": {}
+}
