@@ -11,10 +11,10 @@ describe('trim', () => {
   it('\t   Hello World  \t ', () => {
     expect(trim('\t   Hello World   \t')).to.equal('Hello World')
   })
-  it('lloHello', () => {
-    expect(trim('olHello', 'oll')).to.equal('He')
+  it('ollHello', () => {
+    expect(trim('ollHello', 'oll')).to.equal('He')
   })
-  it('_-Hello-_', () => {
+  it('_-Hello-__-', () => {
     expect(trim('_-Hello-__-', '-_')).to.equal('Hello')
   })
   it('http://hello/', () => {
