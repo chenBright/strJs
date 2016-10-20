@@ -11,7 +11,7 @@ describe('rtrim', () => {
   it('Hello World   ', () => {
     expect(rtrim('Hello World   ')).to.equal('Hello World')
   })
-  it('Hello World\t   ', () => {
+  it('Hello World\t   ', () =>
     expect(rtrim('Hello World\t   ')).to.equal('Hello World')
   })
   it('lloHello', () => {

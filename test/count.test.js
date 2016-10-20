@@ -32,6 +32,9 @@ describe('count', () => {
   it('\'Hello world\' doesn\'t have undefined', () => {
     expect(count('Hello world', undefined)).to.equal(0)
   })
+  it('escape character', () => {
+    expect(count('function()', '()')).to.equal(1)
+  })
   it('empty', () => {
     expect(count('', '')).to.equal(0)
   })

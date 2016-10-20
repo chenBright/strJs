@@ -20,6 +20,9 @@ describe('replaceAll', () => {
   it('foo bar\n foo', () => {
     expect(replaceAll('foo bar\n foo', 'foo', 'moo')).to.equal('moo bar\n moo')
   })
+  it('escape character', () => {
+    expect(replaceAll('()[]', '[]', '()')).to.equal('()()')
+  })
   it('empty string', () => {
     expect(replaceAll('', 'a', 'b')).to.equal('')
   })
