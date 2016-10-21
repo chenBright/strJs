@@ -1,5 +1,5 @@
-import {makeStr} from './helper/makeStr'
-import {escapeRegexp} from './helper/escapeRegexp'
+import { makeStr } from './helper/makeStr'
+import { escapeRegexp } from './helper/escapeRegexp'
 
 export let replaceAll = (str, find, replace, ignoreCase = false) => {
   str = makeStr(str)

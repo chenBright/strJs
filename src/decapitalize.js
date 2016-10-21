@@ -1,4 +1,4 @@
-import {makeStr} from './helper/makeStr'
+import { makeStr } from './helper/makeStr'
 
 export let decapitalize = str => {
   str = makeStr(str)

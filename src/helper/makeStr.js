@@ -1,5 +1,5 @@
 export let makeStr = str => {
-  if (str == null ) {
+  if (str == null) {
     return ''
   }
   return str + ''

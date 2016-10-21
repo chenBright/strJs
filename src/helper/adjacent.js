@@ -1,8 +1,8 @@
-import {makeStr} from './makeStr'
+import { makeStr } from './makeStr'
 
 export let adjacent = (str, direction) => {
   str = makeStr(str)
-  if(str.length === 0) {
+  if (str.length === 0) {
     return ''
   }
   let charCode = str.charCodeAt(0)

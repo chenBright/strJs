@@ -28,6 +28,10 @@
   "rules": {
     linebreak-style: 0,
     "one-var": 0,
-    "semi": [2, "never"]
+    "semi": [2, "never"],
+    "no-param-reassign": 0,
+    "no-bitwise": 0,
+    "no-underscore-dangle": 0,
+    "func-names": 1
   }
 }

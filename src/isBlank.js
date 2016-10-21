@@ -1,4 +1,4 @@
-import {makeStr} from './helper/makeStr'
+import { makeStr } from './helper/makeStr'
 
 export let isBlank = str => {
   str = makeStr(str)

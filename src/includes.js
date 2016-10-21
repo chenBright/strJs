@@ -1,4 +1,4 @@
-import {makeStr} from './helper/makeStr'
+import { makeStr } from './helper/makeStr'
 
 export let includes = (str, subStr) => {
   str = makeStr(str)

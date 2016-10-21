@@ -1,5 +1,5 @@
-import {makeStr} from './helper/makeStr'
-import {chars} from './chars'
+import { makeStr } from './helper/makeStr'
+import { chars } from './chars'
 
 export let insert = (str, index, subStr) => {
   str = makeStr(str)
