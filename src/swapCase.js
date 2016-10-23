@@ -3,7 +3,7 @@ import { chars } from './chars'
 
 export let swapCase = str => {
   str = makeStr(str)
-  if (str.length === 0) {
+  if (str === '') {
     return ''
   }
   let lowerCaseReg = /[a-z]/,
