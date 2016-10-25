@@ -32,6 +32,7 @@
     "no-param-reassign": 0,
     "no-bitwise": 0,
     "no-underscore-dangle": 0,
-    "func-names": 1
+    "func-names": 1,
+    "radix": 1
   }
 }
