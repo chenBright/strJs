@@ -15,6 +15,9 @@ import { rtrim } from './rtrim'
 import { succ } from './succ'
 import { swapCase } from './swapCase'
 import { trim } from './trim'
+import { truncate } from './truncate'
+import { words } from './words'
+import { classify } from './classify'
 
 export let _str = {
   capitalize,
@@ -33,5 +36,8 @@ export let _str = {
   rtrim,
   succ,
   swapCase,
-  trim
+  trim,
+  truncate,
+  words,
+  classify
 }
