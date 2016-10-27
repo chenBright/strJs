@@ -21,8 +21,7 @@ import { classify } from './classify'
 import { titleize } from './titleize'
 import { camelize } from './camelize'
 import { repeat } from './repeat'
-import { repeat } from './repeat'
-import { surround } from './surround'
+import { quote } from './quote'
 
 export let _str = {
   capitalize,
@@ -47,5 +46,6 @@ export let _str = {
   classify,
   titleize,
   camelize,
-  surround
+  surround,
+  quote
 }
