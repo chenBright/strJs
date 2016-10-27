@@ -20,6 +20,7 @@ import { words } from './words'
 import { classify } from './classify'
 import { titleize } from './titleize'
 import { camelize } from './camelize'
+import { repeat } from './repeat'
 
 export let _str = {
   capitalize,
