@@ -2,11 +2,10 @@ import { makeStr } from './helper/makeStr'
 
 export let capitalize = (str, lowercaseRest = false) => {
   str = makeStr(str)
-  let capStr = str.replace(/^[a-z]/, firstLetter => firstLetter.toUpperCase())
-  if (!lowercaseRest) {
-    capStr = capStr.replace(/(\s)+([a-z])/g, (match, blank, firstLetter) =>
-      blank + firstLetter.toUpperCase()
-    )
+  if(str === '') {
+    return ''
   }
-  return capStr
+  let rest = str.slice(1)
+  rest = lowercaseRest ? rest.toLowerCase() : rest
+  return str.charAt(0).toUpperCase() + rest
 }

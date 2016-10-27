@@ -15,19 +15,19 @@ describe('capitalize', () => {
     expect(capitalize('strJS', false)).to.equal('StrJS')
   })
   it('Other letters unchanged', () => {
-    expect(capitalize('STRJS', true)).to.equal('STRJS')
+    expect(capitalize('STRJS', true)).to.equal('Strjs')
   })
   it('Other letters unchanged', () => {
-    expect(capitalize('strJS', true)).to.equal('StrJS')
+    expect(capitalize('strJS', true)).to.equal('Strjs')
   })
   it('first letter of each word is upper case', () => {
-    expect(capitalize('strJS is excellent')).to.equal('StrJS Is Excellent')
+    expect(capitalize('strJS is excellent')).to.equal('StrJS is excellent')
   })
   it('first letter of each word is upper case', () => {
-    expect(capitalize('strJS is excellent', false)).to.equal('StrJS Is Excellent')
+    expect(capitalize('strJS is excellent', false)).to.equal('StrJS is excellent')
   })
   it('only First letter of the first word is upper case', () => {
-    expect(capitalize('strJS is excellent', true)).to.equal('StrJS is excellent')
+    expect(capitalize('strJS is excellent', true)).to.equal('Strjs is excellent')
   })
   it('Non string', () => {
     expect(capitalize('123')).to.equal('123')
