@@ -2,7 +2,7 @@ import { makeStr } from './helper/makeStr'
 
 export let capitalize = (str, lowercaseRest = false) => {
   str = makeStr(str)
-  if(str === '') {
+  if (str === '') {
     return ''
   }
   let rest = str.slice(1)

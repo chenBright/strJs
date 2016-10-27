@@ -3,7 +3,7 @@ import { capitalize } from './capitalize'
 
 export let titleize = str => {
   str = makeStr(str)
-  if(str === '') {
+  if (str === '') {
     return ''
   }
   return str.replace(/[^\s+|^-]+/g, (word) => {
