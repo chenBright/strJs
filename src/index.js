@@ -18,6 +18,7 @@ import { trim } from './trim'
 import { truncate } from './truncate'
 import { words } from './words'
 import { classify } from './classify'
+import { titleize } from './titleize'
 
 export let _str = {
   capitalize,
@@ -39,5 +40,6 @@ export let _str = {
   trim,
   truncate,
   words,
-  classify
+  classify,
+  titleize
 }
