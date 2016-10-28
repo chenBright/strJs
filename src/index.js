@@ -24,6 +24,7 @@ import { repeat } from './repeat'
 import { surround } from './surround'
 import { quote } from './quote'
 import { unquote } from './unquote'
+import { map } from './map'
 
 export let _str = {
   capitalize,
@@ -51,5 +52,6 @@ export let _str = {
   repeat,
   surround,
   quote,
-  unquote
+  unquote,
+  map
 }
