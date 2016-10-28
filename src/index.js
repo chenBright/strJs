@@ -25,6 +25,8 @@ import { surround } from './surround'
 import { quote } from './quote'
 import { unquote } from './unquote'
 import { map } from './map'
+import { escapeHTML } from './escapeHTML'
+import { unescapeHTML } from './unescapeHTML'
 
 export let _str = {
   capitalize,
@@ -53,5 +55,7 @@ export let _str = {
   surround,
   quote,
   unquote,
-  map
+  map,
+  escapeHTML,
+  unescapeHTML
 }
