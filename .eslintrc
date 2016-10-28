@@ -33,6 +33,7 @@
     "no-bitwise": 0,
     "no-underscore-dangle": 0,
     "func-names": 1,
-    "radix": 1
+    "radix": 1,
+    "no-cond-assign": 1
   }
 }
