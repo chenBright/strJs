@@ -7,7 +7,7 @@
     "build": "cross-env NODE_ENV=pro webpack",
     "dev": "cross-env NODE_ENV=dev webpack --progress --color --watch",
     "lint": "./node_modules/.bin/eslint ./src/*.js ./src/helper/*.js",
-    "test": "mocha --compilers js:babel-core/register --colors -w -R nyan ./test/*.js",
+    "test": "npm run lint && mocha --compilers js:babel-core/register --colors -w -R nyan ./test/*.js",
     "push": "git push -u origin master"
   },
   "repository": {
