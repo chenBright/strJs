@@ -19,7 +19,6 @@ import { words } from './words'
 import { classify } from './classify'
 import { titleize } from './titleize'
 import { camelize } from './camelize'
-import { repeat } from './repeat'
 import { surround } from './surround'
 import { quote } from './quote'
 import { unquote } from './unquote'
@@ -53,7 +52,6 @@ export let _str = {
   classify,
   titleize,
   camelize,
-  repeat,
   surround,
   quote,
   unquote,
