@@ -17,6 +17,6 @@ export let unescapeHTML = str => {
   str = makeStr(str)
   if (str === '') {
     return ''
-  } 
+  }
   return str.replace(/&([^;]+);/g, unescape)
 }
