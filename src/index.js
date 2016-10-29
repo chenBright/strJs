@@ -28,7 +28,10 @@ import { unescapeHTML } from './unescapeHTML'
 import { splice } from './splice'
 import { underscored } from './underscored'
 import { dasherize } from './dasherize'
-import { humanize } from './humanize'
+import { strLeft } from './strLeft'
+import { strLeftBack } from './strLeftBack'
+import { strRight } from './strRight'
+import { strRightBack } from './strRightBack'
 
 export let _str = {
   capitalize,
@@ -61,5 +64,9 @@ export let _str = {
   splice,
   underscored,
   dasherize,
-  humanize
+  humanize,
+  strLeft,
+  strLeftBack,
+  strRight,
+  strRightBack
 }
