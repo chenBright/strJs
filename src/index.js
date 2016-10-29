@@ -3,7 +3,6 @@ import { chars } from './chars'
 import { clean } from './clean'
 import { count } from './count'
 import { decapitalize } from './decapitalize'
-import { includes } from './includes'
 import { insert } from './insert'
 import { isBlank } from './isBlank'
 import { join } from './join'
@@ -28,6 +27,7 @@ import { map } from './map'
 import { escapeHTML } from './escapeHTML'
 import { unescapeHTML } from './unescapeHTML'
 import { splice } from './splice'
+import { underscored } from './underscored'
 
 export let _str = {
   capitalize,
@@ -35,7 +35,6 @@ export let _str = {
   clean,
   count,
   decapitalize,
-  includes,
   insert,
   isBlank,
   join,
@@ -59,5 +58,6 @@ export let _str = {
   map,
   escapeHTML,
   unescapeHTML,
-  splice
+  splice,
+  underscored
 }
