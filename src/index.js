@@ -28,6 +28,7 @@ import { escapeHTML } from './escapeHTML'
 import { unescapeHTML } from './unescapeHTML'
 import { splice } from './splice'
 import { underscored } from './underscored'
+import { dasherize } from './dasherize'
 
 export let _str = {
   capitalize,
@@ -59,5 +60,6 @@ export let _str = {
   escapeHTML,
   unescapeHTML,
   splice,
-  underscored
+  underscored,
+  dasherize
 }
