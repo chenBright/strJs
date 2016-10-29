@@ -27,6 +27,7 @@ import { unquote } from './unquote'
 import { map } from './map'
 import { escapeHTML } from './escapeHTML'
 import { unescapeHTML } from './unescapeHTML'
+import { splice } from './splice'
 
 export let _str = {
   capitalize,
@@ -57,5 +58,6 @@ export let _str = {
   unquote,
   map,
   escapeHTML,
-  unescapeHTML
+  unescapeHTML,
+  splice
 }
