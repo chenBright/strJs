@@ -10,6 +10,7 @@
     "test": "npm run lint && mocha --compilers js:babel-core/register --colors -w -R nyan ./test/*.js",
     "push": "git push -u origin master"
   },
+  "pre-commit": ["lint"],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/chenBright/strJS.git"
@@ -38,6 +39,7 @@
     "eslint-config-airbnb-base": "^8.0.0",
     "eslint-loader": "1.1.0",
     "mocha": "2.3.4",
+    "pre-commit": "^1.1.3",
     "webpack": "1.12.9"
   },
   "dependencies": {}
