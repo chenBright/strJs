@@ -37,6 +37,7 @@ import { strLeftBack } from './strLeftBack'
 import { strRight } from './strRight'
 import { strRightBack } from './strRightBack'
 import { include } from './include'
+import { startsWith } from './startsWith'
 
 let fns = {
   capitalize,
@@ -74,7 +75,8 @@ let fns = {
   strLeftBack,
   strRight,
   strRightBack,
-  include
+  include,
+  startsWith
 }
 
 function S(str) {
