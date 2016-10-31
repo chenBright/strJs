@@ -34,6 +34,9 @@
     "no-underscore-dangle": 0,
     "func-names": 1,
     "radix": 1,
-    "no-cond-assign": 1
+    "no-cond-assign": 1,
+    "space-before-function-paren": 0,
+    "no-restricted-syntax": 1,
+    "no-mixed-operators": 0
   }
 }
