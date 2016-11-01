@@ -2,7 +2,8 @@ import { makeStr } from './helper/makeStr'
 
 export let repeat = (str, count = 0, separator = '') => {
   str = makeStr(str)
-  if (str === '' || count == 0) {
+  count = parseInt(count)
+  if (str === '' || count === 0) {
     return ''
   }
   let repeatStr = str
