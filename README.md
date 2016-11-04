@@ -1,16 +1,16 @@
-# type
+# strJs
 
 String manipulation functions for javascript（javascript字符串操作函数集合）
 
 [github][4]
 
-[![npm](https://img.shields.io/badge/node-%3E%3D6.7.0-brightgreen.svg)]() [![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg?maxAge=2592000)]() [![npm](https://img.shields.io/badge/release-1.0.0-brightgreen.svg)]()  [![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)]()
+[![npm](https://img.shields.io/badge/node-6.9.1-brightgreen.svg)]() [![Scrutinizer Build](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg?maxAge=2592000)]() [![npm](https://img.shields.io/badge/release-1.0.0-brightgreen.svg)]()  [![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)]()
 
 ## 使用
 
 ```bash
 // 第一次使用，需要先安装依赖
-npm imstall
+npm install
 
 // 构建
 npm run build
