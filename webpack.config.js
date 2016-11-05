@@ -13,7 +13,7 @@ if (env === 'pro') {
 }
 
 let config = {
-  entry: __dirname + '/src/index.js',
+  entry: __dirname + '/src/str.js',
   // entry: ['babel-polyfill', __dirname + '/src/index.js'],
   devtool: env === 'pro' ? '' : 'source-map',
   output: {
