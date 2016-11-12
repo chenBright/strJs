@@ -1,6 +1,5 @@
 'use strict'
 
-// import 'babel-polyfill'
 import { capitalize } from './capitalize'
 import { chars } from './chars'
 import { clean } from './clean'
@@ -83,6 +82,18 @@ let fns = {
   chop
 }
 
+/**
+ * str是一个包含了很多操作字符串的静态方法的对象。
+ *
+ * 同时，str也是一个构造函数，实例化的对象包含上述一样的方法。
+ *
+ * 通过构造函数实例化的对象的方法可以进行链式调用，但只能在当前调用方法返回的值的类型为String时，才能链式调用下一个方法。
+ * 此时，你不能直接得到该String值，需要通过链式调用val方法才能得到该String值。
+ *
+ * 当前调用方法返回的值的类型为非String，如Array、Boolean、Number时，会直接得到该非String值，不需要也不能链式调用val方法，否则，会抛出错误。
+ * @module str
+ * @param  {String} str 需要操作的字符串
+ */
 function S(str) {
   if (!(this instanceof S)) {
     return new S(str)
@@ -90,15 +101,30 @@ function S(str) {
   this.value = str
 }
 S.version = '0.1.0'
+
+/**
+ * 链式调用时，可返回当前String值。
+ * @module str#val
+ * @return {String} 调用val前的调用方法的返回值。
+ */
 S.prototype.val = function val() {
   return this.value
 }
 
+// 静态方法集合
 let methodsObj = {}
+/**
+ * 将函数添加为对象的静态方法
+ * @private
+ * @method fn2method
+ * @param  {String}   key 作为对象属性
+ * @param  {Function} fn  作为静态方法
+ */
 function fn2method(key, fn) {
   if (typeof fn !== 'function') {
     return
   }
+  // 将静态方法定义为不可配置和不可写
   methodsObj[key] = {
     value: function(...args) {
       let str = this.value
@@ -110,11 +136,20 @@ function fn2method(key, fn) {
   }
 }
 
+// 实例方法集合
 let prototypeObj = {}
+/**
+ * 将函数添加为对象的实例方法
+ * @private
+ * @method fn2method
+ * @param  {String}   key 作为对象属性
+ * @param  {Function} fn  作为实例方法
+ */
 function fn2prototype(key, fn) {
   if (typeof fn !== 'function') {
     return
   }
+  // 将实例方法定义为不可配置和不可写
   prototypeObj[key] = {
     value: function(...args) {
       let str = this.value
@@ -137,6 +172,7 @@ for (let key in fns) {
     fn2prototype(key, fns[key])
   }
 }
+// 为S对象添加静态方法和实例方法
 Object.defineProperties(S, methodsObj)
 Object.defineProperties(S.prototype, prototypeObj)
 

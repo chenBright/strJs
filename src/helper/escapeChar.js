@@ -1,3 +1,6 @@
+/**
+ * HTML编码字典
+ */
 export default {
   '¢': 'cent',
   '£': 'pound',
