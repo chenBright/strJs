@@ -14,9 +14,9 @@ let spChars = Object.keys(escapeChar),
  * // '&lt;div&gt;Blah &amp; &quot;blah&quot; &amp; &#39;blah&#39;&lt;/div&gt;'
  * str.escapeHTML('<div>Blah & "blah" & \'blah\'</div>')
  *
- * str.escapeHTML('&lt;')                                 // '&amp;lt;'
- * str.escapeHTML('¢')                                    // '&cent;'
- * str.escapeHTML('¢ £ ¥ € © ®')                          // '&cent; &pound; &yen; &euro; &copy; &reg;'
+ * str.escapeHTML('&lt;')           // '&amp;lt;'
+ * str.escapeHTML('¢')              // '&cent;'
+ * str.escapeHTML('¢ £ ¥ € © ®')    // '&cent; &pound; &yen; &euro; &copy; &reg;'
  */
 export let escapeHTML = str => {
   str = makeStr(str)
