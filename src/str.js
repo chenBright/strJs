@@ -83,16 +83,32 @@ let fns = {
 }
 
 /**
- * str是一个包含了很多操作字符串的静态方法的对象。
+ * str是一个包含了很多操作字符串的静态方法的对象。<br/>
  *
- * 同时，str也是一个构造函数，实例化的对象包含上述一样的方法。
+ * 同时，str也是一个构造函数，既可以通过new操作得到实例，也可以通过直接调用得到实例。
+ * 实例化的对象包含的方法与str的静态方法的作用一样。<br/>
  *
  * 通过构造函数实例化的对象的方法可以进行链式调用，但只能在当前调用方法返回的值的类型为String时，才能链式调用下一个方法。
- * 此时，你不能直接得到该String值，需要通过链式调用val方法才能得到该String值。
+ * 此时，你不能直接得到该String值，需要通过链式调用val方法才能得到该String值。<br/>
  *
- * 当前调用方法返回的值的类型为非String，如Array、Boolean、Number时，会直接得到该非String值，不需要也不能链式调用val方法，否则，会抛出错误。
+ * 当前调用方法返回的值的类型为非String，如Array、Boolean、Number时，会立即返回该非String值，不需要也不能链式调用val方法，否则，会抛出错误。
  * @module str
  * @param  {String} str 需要操作的字符串
+ * @example
+ * // str是一个对象，可以直接调用静态方法
+ * str.trim('   abc   ')                      // 'abc'
+ * str.succ('a')                              // 'b'
+ *
+ * // 实例化、链式调用
+ * var s1 = str('   foo  ')
+ * s1.trim().capitalize().val()               // 'Foo'
+ *
+ * var s2 = new str('   foo  ')
+ * s2.trim().capitalize().val()               // 'Foo'
+ *
+ * // 当链式调用方法返回的值的类型为非String时，不能调用val方法
+ * str(" foobar ").trim().startsWith("foo")   // true
+ * str(" foobar ").trim().chars()             // ['f', 'o', 'o', 'b', 'a', 'r']
  */
 function S(str) {
   if (!(this instanceof S)) {
@@ -106,6 +122,8 @@ S.version = '0.1.0'
  * 链式调用时，可返回当前String值。
  * @module str#val
  * @return {String} 调用val前的调用方法的返回值。
+ * @example
+ * str('   foo  ').trim().capitalize().val()   // 'Foo'
  */
 S.prototype.val = function val() {
   return this.value
