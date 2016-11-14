@@ -78,7 +78,7 @@ str(" foobar ").trim().chars()             // ['f', 'o', 'o', 'b', 'a', 'r']
 
 ## API
 
-详细API请见
+[API文档][5]
 
 ## 贡献者
 
@@ -98,3 +98,4 @@ str(" foobar ").trim().chars()             // ['f', 'o', 'o', 'b', 'a', 'r']
 [2]: https://github.com/chenBright/strJS/issues
 [3]: https://github.com/chenBright/strJS/blob/master/CHANGELOG.md
 [4]: https://github.com/chenBright/strJS#typeiserrvariable
+[5]: https://chenbright.github.io/strJs/
