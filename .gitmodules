@@ -1,3 +1,0 @@
-[submodule "libfoo"]
-	path = docs/template/docdash
-	url = https://github.com/nijikokun/minami
