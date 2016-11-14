@@ -8,7 +8,7 @@
     "dev": "cross-env NODE_ENV=dev webpack --progress --color --watch",
     "lint": "./node_modules/.bin/eslint ./src/*.js ./src/helper/*.js",
     "test": "npm run lint && mocha --compilers js:babel-core/register --colors -w -R nyan ./test/*.js",
-    "doc": "./node_modules/.bin/jsdoc src/ -t ./doc/template/docdash -d ./doc/api",
+    "doc": "./node_modules/.bin/jsdoc src/ -t ./docs/template/docdash -d ./docs",
     "push": "git push -u origin master"
   },
   "pre-commit": [

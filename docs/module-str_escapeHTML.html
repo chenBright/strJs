@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>str/escapeHTML - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-str.html">str</a></li><li><a href="module-str_camelize.html">str/camelize</a></li><li><a href="module-str_capitalize.html">str/capitalize</a></li><li><a href="module-str_chars.html">str/chars</a></li><li><a href="module-str_chop.html">str/chop</a></li><li><a href="module-str_classify.html">str/classify</a></li><li><a href="module-str_clean.html">str/clean</a></li><li><a href="module-str_count.html">str/count</a></li><li><a href="module-str_decapitalize.html">str/decapitalize</a></li><li><a href="module-str_endsWith.html">str/endsWith</a></li><li><a href="module-str_escapeHTML.html">str/escapeHTML</a></li><li><a href="module-str_humanize.html">str/humanize</a></li><li><a href="module-str_include.html">str/include</a></li><li><a href="module-str_insert.html">str/insert</a></li><li><a href="module-str_isBlank.html">str/isBlank</a></li><li><a href="module-str_join.html">str/join</a></li><li><a href="module-str_map.html">str/map</a></li><li><a href="module-str_pred.html">str/pred</a></li><li><a href="module-str_quote.html">str/quote</a></li><li><a href="module-str_repeat.html">str/repeat</a></li><li><a href="module-str_replaceAll.html">str/replaceAll</a></li><li><a href="module-str_reverse.html">str/reverse</a></li><li><a href="module-str_splice.html">str/splice</a></li><li><a href="module-str_startsWith.html">str/startsWith</a></li><li><a href="module-str_strLeft.html">str/strLeft</a></li><li><a href="module-str_strLeftBack.html">str/strLeftBack</a></li><li><a href="module-str_strRight.html">str/strRight</a></li><li><a href="module-str_strRightBack.html">str/strRightBack</a></li><li><a href="module-str_succ.html">str/succ</a></li><li><a href="module-str_surround.html">str/surround</a></li><li><a href="module-str_swapCase.html">str/swapCase</a></li><li><a href="module-str_titleize.html">str/titleize</a></li><li><a href="module-str_trim.html">str/trim</a></li><li><a href="module-str_truncate.html">str/truncate</a></li><li><a href="module-str_underscored.html">str/underscored</a></li><li><a href="module-str_unescapeHTML.html">str/unescapeHTML</a></li><li><a href="module-str_unquote.html">str/unquote</a></li><li><a href="module-str_words.html">str/words</a></li><li><a href="str_module_val.html">val</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">str/escapeHTML</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">将HTML字符串编码，这个函数支持 cent, yen, euro, pound, lt, gt, copy, reg, quote, amp, apos, nbsp。</div>
+        
+
+        
+            
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="escapeHTML.js.html">escapeHTML.js</a>, <a href="escapeHTML.js.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>// '&amp;lt;div&amp;gt;Blah &amp;amp; &amp;quot;blah&amp;quot; &amp;amp; &amp;#39;blah&amp;#39;&amp;lt;/div&amp;gt;'str.escapeHTML('&lt;div>Blah &amp; "blah" &amp; \'blah\'&lt;/div>')str.escapeHTML('&amp;lt;')           // '&amp;amp;lt;'str.escapeHTML('¢')              // '&amp;cent;'str.escapeHTML('¢ £ ¥ € © ®')    // '&amp;cent; &amp;pound; &amp;yen; &amp;euro; &amp;copy; &amp;reg;'</code></pre>
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">HTML字符串</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    编码后的字符串
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.2</a> on Mon Nov 14 2016 10:50:24 GMT+0800 (中国标准时间) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
