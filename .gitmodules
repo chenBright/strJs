@@ -1,0 +1,3 @@
+[submodule "libfoo"]
+	path = docs/template/docdash
+	url = git@github.com:nijikokun/minami.git
