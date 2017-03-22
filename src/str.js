@@ -146,7 +146,6 @@ function fn2method(key, fn) {
   methodsObj[key] = {
     value: function(...args) {
       let str = this.value
-      args.unshift(str)
       return fn.apply(null, args)
     },
     writable: false,
@@ -170,8 +169,7 @@ function fn2prototype(key, fn) {
   // 将实例方法定义为不可配置和不可写
   prototypeObj[key] = {
     value: function(...args) {
-      let str = this.value
-      args.unshift(str)
+      let reallyArgs = [this.value].concat(args)
       let res = fn.apply(null, args)
       if (typeof res === 'string') {
         this.value = res
