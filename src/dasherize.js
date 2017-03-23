@@ -9,6 +9,7 @@ import { trim } from './trim'
  * @param  {String}      match  与正则表达式匹配的字符串
  * @param  {String}      letter 与分组匹配的字符串
  * @param  {Number}      index  match在被匹配字符串中的索引号
+ * @return {String}             处理后的字符串
  */
 function addDash(match, letter, index) {
   // 如果第一个单词的首字母为小写，则不作处理
