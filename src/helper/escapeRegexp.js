@@ -6,4 +6,4 @@ import { makeStr } from './makeStr'
  * @param  {String}     character 需要转义的字符串
  * @return {String}               转义后的字符串
  */
-export let escapeRegexp = character => makeStr(character).replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$1')
+export let escapeRegexp = character => makeStr(character).replace(/([.*+?^=!:${}()|[\]/\\])/g, '\\$1')

@@ -146,7 +146,8 @@ function fn2method(key, fn) {
   methodsObj[key] = {
     value: function(...args) {
       let str = this.value
-      return fn.apply(null, args)
+      let reallyArgs = [str].concat(args)
+      return fn.apply(null, reallyArgs)
     },
     writable: false,
     configurable: false
@@ -170,7 +171,7 @@ function fn2prototype(key, fn) {
   prototypeObj[key] = {
     value: function(...args) {
       let reallyArgs = [this.value].concat(args)
-      let res = fn.apply(null, args)
+      let res = fn.apply(null, reallyArgs)
       if (typeof res === 'string') {
         this.value = res
         return this
