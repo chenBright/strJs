@@ -33,10 +33,10 @@
     "no-bitwise": 0,
     "no-underscore-dangle": 0,
     "func-names": 1,
-    "radix": 1,
-    "no-cond-assign": 1,
+    "radix": 0,
+    "no-cond-assign": 0,
     "space-before-function-paren": 0,
-    "no-restricted-syntax": 1,
+    "no-restricted-syntax": 0,
     "no-mixed-operators": 0
   }
 }

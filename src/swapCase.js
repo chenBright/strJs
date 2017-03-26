@@ -18,7 +18,7 @@ export let swapCase = str => {
   let lowerCaseReg = /[a-z]/,
     upperCaseReg = /[A-Z]/,
     strings = chars(str),
-    swapCases = strings.map(function (val) {
+    swapCases = strings.map((val) => {
       if (lowerCaseReg.test(val)) {
         return val.toUpperCase()
       } else if (upperCaseReg.test(val)) {
