@@ -144,10 +144,8 @@ function fn2method(key, fn) {
   }
   // 将静态方法定义为不可配置和不可写
   methodsObj[key] = {
-    value: function(...args) {
-      let str = this.value
-      let reallyArgs = [str].concat(args)
-      return fn.apply(null, reallyArgs)
+    value: (...args) => {
+      return fn.apply(null, args)
     },
     writable: false,
     configurable: false
@@ -169,7 +167,7 @@ function fn2prototype(key, fn) {
   }
   // 将实例方法定义为不可配置和不可写
   prototypeObj[key] = {
-    value: function(...args) {
+    value: (...args) => {
       let reallyArgs = [this.value].concat(args)
       let res = fn.apply(null, reallyArgs)
       if (typeof res === 'string') {
@@ -189,6 +187,7 @@ for (let key in fns) {
     fn2prototype(key, fns[key])
   }
 }
+
 // 为S对象添加静态方法和实例方法
 Object.defineProperties(S, methodsObj)
 Object.defineProperties(S.prototype, prototypeObj)
