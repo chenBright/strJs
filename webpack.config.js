@@ -21,7 +21,7 @@ let config = {
     filename: outputFile,
     library: libName,
     libraryTarget: 'umd',
-    umdNameedDefine: true
+    umdNamedDefine: true
   },
   module: {
     preLoaders: [{
